@@ -34,11 +34,8 @@ from skylee.modules.helper_funcs.alternate import typing_action
 PM_START_TEXT = f"""
 Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me, Click Help button.
 
-I'm a fork of @skylee_bot!
+Dev has been stopped, you guys can check at there [skylee](https://t.me/skyleebot).
 
-Dev has been stopped, you guys can check at there [skylee notice](https://t.me/skyleebot/61).
-
-Wanna Add me to your Group? Just click the button below!
 """
 
 buttons = [
@@ -173,7 +170,7 @@ def start(update, context):
             )
     else:
         update.effective_message.reply_text(
-            "Sending you a warm hi & wishing your day is a happy one!"
+            "Yo, i'am alive!"
         )
 
 
