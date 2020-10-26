@@ -166,7 +166,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://hosty.xxx/i/0145ddc952bf167ed1ef97f7440ffe978cf1a2d7.jpg",
+                "https://telegra.ph/file/bb40432b0ad34dd7e19b2.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
