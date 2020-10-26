@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/skyleebot
-RUN git clone https://github.com/starry69/skyleebot /root/skyleebot
+RUN git clone https://github.com/tldr-cell/skyleebot /root/skyleebot
 WORKDIR /root/skyleebot
 
 #Copy config file to /root/skyleebot/skylee
