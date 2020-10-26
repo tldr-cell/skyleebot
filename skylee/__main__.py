@@ -35,8 +35,6 @@ PM_START_TEXT = f"""
 Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me, Click Help button.
 
 I'm a fork of @skylee_bot!
-This bot is been used personal purpose, please remove me if you have been added to your group!
-i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
 
 Dev has been stopped, you guys can check at there [skylee notice](https://t.me/skyleebot/61).
 
