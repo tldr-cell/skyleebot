@@ -328,7 +328,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    f = open("SkyLee{}.backup".format(chat_id), "w")
+    f = open("ManagerGroup{}.backup".format(chat_id), "w")
     f.write(str(baccinfo))
     f.close()
     context.bot.sendChatAction(current_chat_id, "upload_document")
@@ -345,7 +345,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("SkyLee{}.backup".format(chat_id), "rb"),
+        document=open("ManagerGroup{}.backup".format(chat_id), "rb"),
         caption="*Successfully imported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `SkyLee-Backup` is specially made for notes.".format(
             chat.title, chat_id, tgl
         ),
@@ -353,7 +353,7 @@ def export_data(update, context):
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("SkyLee{}.backup".format(chat_id))  # Cleaning file
+    os.remove("ManagerGroup{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
