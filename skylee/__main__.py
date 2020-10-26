@@ -34,10 +34,11 @@ from skylee.modules.helper_funcs.alternate import typing_action
 PM_START_TEXT = f"""
 Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me, Click Help button.
 
-I'm here to make your group management fun and easy!
+I'm a fork of @skylee_bot!
+This bot is been used personal purpose, please remove me if you have been added to your group!
 i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
 
-Any issues or need help related to me? join our group [skylee support chat](https://t.me/skyleebot).
+Dev has been stopped, you guys can check at there [skylee notice](https://t.me/skyleebot/61).
 
 Wanna Add me to your Group? Just click the button below!
 """
@@ -165,7 +166,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://telegra.ph/file/4edfb3738a35bdfa1922f.jpg",
+                "https://hosty.xxx/i/0145ddc952bf167ed1ef97f7440ffe978cf1a2d7.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
