@@ -245,14 +245,12 @@ def invite(update, context):
     chat = update.effective_chat
     args = context.args
 
-    conn = connected(context.bot, update, chat, user.id, need_admin=True)
-    if conn:
-        chat = dispatcher.bot.getChat(conn)
-    else:
-        if msg.chat.type == "private":
-            msg.reply_text("This command is meant to use in chat not in PM")
-            return ""
-        chat = update.effective_chat
+    if update.effective_message.chat.type == "private":
+		send_message(update.effective_message, "This command only works in Groups.")
+		return ""
+	chat = update.effective_chat
+	chat_id = update.effective_chat.id
+	chat_name = update.effective_message.chat.title
 
     if chat.username:
         msg.reply_text(chat.username)
