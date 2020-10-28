@@ -246,7 +246,7 @@ def invite(update, context):
     args = context.args
 
     if update.effective_message.chat.type == "private":
-		send_message(update.effective_message, "This command only works in Groups.")
+		msg.reply_text(update.effective_message, "This command only works in Groups.")
 		return ""
 	chat = update.effective_chat
 	chat_id = update.effective_chat.id
