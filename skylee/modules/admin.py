@@ -46,7 +46,7 @@ def promote(update, context):
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("mention one.... 🤷🏻‍♂.")
+        message.reply_text("mention one.....")
         return ""
 
     user_member = chat.get_member(user_id)
@@ -73,7 +73,7 @@ def promote(update, context):
         can_pin_messages=bot_member.can_pin_messages,
     )
 
-    message.reply_text("Promoted🧡")
+    message.reply_text("Promoted")
     return (
         "<b>{}:</b>"
         "\n#PROMOTED"
@@ -104,7 +104,7 @@ def demote(update, context):
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("mention one.... 🤷🏻‍♂.")
+        message.reply_text("mention one.....")
         return ""
 
     user_member = chat.get_member(user_id)
@@ -281,8 +281,8 @@ def adminlist(update, context):
         status = admin.status
         name = f"{(mention_html(user.id, user.first_name))}"
         if status == "creator":
-            text += "\n 🦁 Creator:"
-            text += "\n • {} \n\n 🦊 Admin:".format(name)
+            text += "\n 👑 Creator:"
+            text += "\n • {} \n\n 👸 Admin:".format(name)
     for admin in administrators:
         user = admin.user
         status = admin.status

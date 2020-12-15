@@ -34,16 +34,16 @@ from skylee.modules.helper_funcs.alternate import typing_action
 PM_START_TEXT = f"""
 Hey there! my name is *{dispatcher.bot.first_name}*. If you have any questions on how to use me, Click Help button.
 
-Dev has been stopped, you guys can check at there [skylee](https://t.me/skyleebot).
+I'm here to make your group management fun and easy!
 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/skylee_bot?startgroup=true"
+            text="Add to Group 👥", url="t.me/Indoloaderbot?startgroup=true"
         ),
-        InlineKeyboardButton(text="Updates 📢", url="https://t.me/skyleeupdates"),
+        InlineKeyboardButton(text="Source 📢", url="https://t.me/scbotloader"),
     ]
 ]
 
@@ -160,8 +160,7 @@ def start(update, context):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            update.effective_message.reply_photo(
-                "https://telegra.ph/file/bb40432b0ad34dd7e19b2.jpg",
+            update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
@@ -170,10 +169,10 @@ def start(update, context):
             )
     else:
         update.effective_message.reply_text(
-            "Yo, i'am alive!"
+            text="I'am alive",
         )
 
-
+        
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
@@ -200,7 +199,6 @@ def error_handler(update, context):
         message = message[:4096]
     # Finally, send the message
     context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
-
 
 @run_async
 def help_button(update, context):

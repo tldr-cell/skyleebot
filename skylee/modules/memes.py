@@ -452,12 +452,12 @@ Some dank memes for fun or whatever!
 
 *Regex based memes:*
 
-`/decide` can be also used with regex like: `skylee? <question>: randomly answer "Yes, No" etc.`
+`/decide` can be also used with regex like: `indoloader? <question>: randomly answer "Yes, No" etc.`
 
 Some other regex filters are:
 `me too` | `goodmorning` | `goodnight`.
 
-Skylee will reply random strings accordingly when these words are used!
+Indoloader will reply random strings accordingly when these words are used!
 All regex filters can be disabled incase u don't want... like: `/disable metoo`.
 
 """

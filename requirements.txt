@@ -24,3 +24,4 @@ spamwatch
 bleach
 markdown2
 alphabet_detector
+dnspython

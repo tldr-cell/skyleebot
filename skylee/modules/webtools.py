@@ -73,9 +73,7 @@ def speedtst(update, context):
         "Upload "
         f"{speed_convert(result['upload'])} \n"
         "Ping "
-        f"{result['ping']} \n"
-        "ISP "
-        f"{result['client']['isp']}",
+        f"{result['ping']}",
         update.effective_chat.id,
         ed_msg.message_id,
     )
