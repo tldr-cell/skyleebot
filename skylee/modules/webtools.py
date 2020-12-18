@@ -89,7 +89,6 @@ def system_status(update, context):
     uname = platform.uname()
     status += "<b>System:</b> <code>" + str(uname.system) + "</code>\n"
     status += "<b>Node name:</b> <code>" + str(uname.node) + "</code>\n"
-    status += "<b>Release:</b> <code>" + str(uname.release) + "</code>\n"
     status += "<b>Version:</b> <code>" + str(uname.version) + "</code>\n"
     status += "<b>Machine:</b> <code>" + str(uname.machine) + "</code>\n"
     status += "<b>Processor:</b> <code>" + str(uname.processor) + "</code>\n\n"
